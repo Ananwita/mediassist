@@ -8,7 +8,7 @@
 
 ## Problem Statement
 
-MediCare General Hospital receives 200+ helpline calls daily. 80% ask the same five questions.
+MediCare General Hospital receives a high volume of daily helpline queries. 80% ask the same five questions.
 MediAssist is a 24/7 LangGraph-powered AI assistant that answers from a verified knowledge base,
 remembers the conversation, uses live tools for time-sensitive queries, and never fabricates information.
 
@@ -79,7 +79,7 @@ mediassist/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/mediassist.git
+git clone https://github.com/Ananwita/mediassist.git
 cd mediassist
 
 # 2. Create virtual environment
@@ -89,9 +89,10 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Set up environment variables
+# 4. Set up environment variables (optional)
 cp .env.example .env
-# Edit .env and add your GROQ_API_KEY
+# Add GROQ_API_KEY if you want LLM-powered responses
+# The system also works without it using fallback mode
 
 # 5. Launch the app
 streamlit run ui/app.py
